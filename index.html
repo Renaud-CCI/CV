@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renaud Bresson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/77138ed848.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg text-white">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon justify-content-end"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 me-5 pe-5">
+        <li class="nav-item text-simpson px-2">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link text-simpson" href="#">Link</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link text-simpson" href="#">Disabled</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <section id="introSky">
+    <div class="title text-simpson">
+      <a class="navbar-brand" href="#"><h1>Renaud Bresson</h1></a>
+    </div>
+
+    <div class="sky">
+      <img class="cloud big-cloud big-cloud_1" src="./images/clouds/big-cloud.png" alt="">
+      <img class="cloud big-cloud big-cloud_2" src="./images/clouds/big-cloud.png" alt="">
+      <img class="cloud top-cloud" src="./images/clouds/top-cloud1.png" alt="">
+      <img class="cloud cloud-group cloud-group_1" src="./images/clouds/cloud-group_1.png" alt="">
+      <img class="cloud cloud-group cloud-group_2" src="./images/clouds/cloud-group_1.png" alt="">
+      <img class="cloud cloud-group cloud-group_3" src="./images/clouds/cloud-group_2.png" alt="">
+      <img class="cloud middle-cloud" src="./images/clouds/middle-cloud.png" alt="">
+      <img class="cloud middle-cloud2" src="./images/clouds/middle-cloud2.png" alt="">
+      <img class="cloud middle-cloud3" src="./images/clouds/middle-cloud3.png" alt="">
+    </div>
+  </section>
+
+  <section id="siteBody">
+
+    <!-- BIO SECTION -->
+    <section id="myBio" class="text-center container">
+      <div  class="container d-flex mb-5">
+        <div class="row m-auto">
+
+          <div class="col-12 text-center px-5">
+            <h2>NOOB WEB DEVELOPPER</h2>
+            <img class="photo" src="./images/photo.jpg" alt="photo de Renaud">          
+            <p>
+              Actuellement en formation à la CCI de Roanne avec le garage404 pour un titre professionnel de web developper. <br>
+              Le plaisir que me procure le codage n'a d'égal que ma détermination à appréhender au mieux les languages qui me permettront d'assurer ma reconvertion professionnelle dans de bonnes conditions.<br>
+              Afin de mettre en pratique les savoirs acquis je recherche un stage majoritairement orienté back-end dans la plaine du Forez.
+            </p>
+          </div>
+
+          <div class="col-12 text-end px-5 mx-5">
+            <a class="cv-link" href="https://renaud-bresson.github.io/" target="_blank" >Voir mon CV</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END BIO SECTION -->
+    <hr>
+
+<!-- SKILLS SECTION -->
+
+    <section id="mySkills" class="text-center container">
+
+      <!-- HIDDEN MAILBOX -->
+      <a id="sendMail" href="mailto:renaud.bresson@gmail.com" style="display:none"></a>
+      <!-- END HIDDEN MAILBOX -->
+
+      <div class="row text-center"><h2>SKILLS</h2></div>
+      <div class="row text-center"><p>Faites bouger ces stats !</p></div>
+
+      <div class="container d-flex flex-column skillsRange justify-content-center text-center">
+        <div class="row justify-content-center text-center">
+
+          <div class="col-4 col-md-2 mx-2">
+            <label for="html"><img src="./images/languages/html.png" alt="logo html"></label>
+            <br>
+            <input type="range" class="skillsInput" name="html" min="0" max="100" value="75" step="5">
+          </div>
+
+          <div class="col-4 col-md-2 mx-2">
+            <label for="css"><img src="./images/languages/css.png" alt="logo cs"></label>
+            <br>
+            <input type="range" class="skillsInput" name="css" min="0" max="100" value="75" step="5">
+          </div>
+
+          <div class="col-4 col-md-2 mx-2">
+            <label for="js"><img src="./images/languages/js.png" alt="logo js"></label>
+            <br>
+            <input type="range" class="skillsInput" name="js" min="0" max="100" value="50" step="5">
+          </div>
+
+          <div class="col-4 col-md-2 mx-2">
+            <label for="php"><img src="./images/languages/php.png" alt="logo php"></label>
+            <br>
+            <input type="range" class="skillsInput" name="php" min="0" max="100" value="15" step="5">
+          </div>
+
+          <div class="col-4 col-md-2 mx-2">
+            <label for="python"><img src="./images/languages/python.png" alt="logo python"></label>
+            <br>
+            <input type="range" class="skillsInput" name="python" min="0" max="100" value="15" step="5">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SKILLS SECTION -->
+    <hr>
+
+    <!-- CV SECTION -->
+    <section id="myCV" class="text-center container">
+      <h2>MES EXPERIENCES</h2>
+      <div class="container legoCont">
+        <div class="row lego lego1">
+          <p>
+            En cours
+            <h4>Formation Developpeur Web , CCI Roanne - Garage 404 (42)</h4>
+            En reconvertion professionelle dans la résolution de problèmes et la création cyber-artisanale suite à la survenur d'un handicap ne me permettant plus de travailler debout.<br>
+            Une opportunité de carrière dans un domaine qui me séduit depuis l'adolescence et de plus en plus au fur et à mesure des savoirs acquis.
+          </p>
+        </div>
+        <div class="row lego lego2">
+          <p>
+            2014 <i class="fa-solid fa-arrow-right"></i> 2022
+          <h4>Caramel Analyst, NIGAY SAS - Feurs (42)
+            Analyses physiques, chimiques et biologiques de produits agroalimentaires</h4>
+            Debuggings de lots non-conformes par l'utilisation de CDC, de databases et d'un sens logique pour aboutir à un
+            recettage parfait coté client.
+            <br>
+            Délégué du personnel : Compilations de codes sources d'insatisfactions et intégrations au back-office de
+            l'entreprise.
+          </p>
+        </div>
+        <div class="row lego lego3">
+          <p>2003 <i class="fa-solid fa-arrow-right"></i> 2013
+            <h4>Human Samples Analyst, Unibio - Nîmes (30) / Unilians - Feurs (42)</h4>
+            Analyses physiques, chimiques et biologiques d'échantillons médicaux.<br>
+            Samplings sur patient.e.s / Reportings aux médecins et cliniques
+            Référent Qualité : Développements, tests, mises en productions et maintenances des backlogs nécéssaires à
+            l'accréditation du laboratoire.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END CV SECTION -->
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+
+@font-face {
+  font-family: simpson;
+  src: url(./assets/Simpsonfont.otf);
+}
+
+@font-face{
+  font-family: LTwave;
+  src: url(./assets/LTwave/LTWave-Regular.ttf);
+}
+
+.text-simpson{
+  font-family: simpson;
+}
+
+h2{
+  font-size: 30px;
+}
+
+p{
+  font-size: 20px;
+}
+
+
+
+
+body{
+  background-image: url(./images/green-background.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+
+/* -----INTRO SKY---------- */
+
+.sky{
+  opacity: 0%;
+  position: absolute;
+  z-index:0;
+  height: 100vh;
+  width: 100%;
+  background-color: #79b0ff;
+  animation-name: endsky;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+
+.title h1{
+  margin: none;
+  padding: none;
+  z-index:4;
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 8px;
+  left:1.5%;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+  font-size: 4.5vh;
+  animation-name: titleZoomin, titleInNavbar;
+  animation-duration: 2s, 1.5s;
+  animation-timing-function: linear, ease-in-out;
+  animation-delay: 0s, 3.5s;
+  animation-fill-mode: forwards;
+}
+
+
+.top-cloud{
+  opacity:0%;
+  position: absolute;
+  height: 35%;
+  top: -2%;
+  left:25%;
+  animation-name: leftclouds;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+.big-cloud{
+  z-index:6;
+}
+.big-cloud_1{
+  opacity:0%;
+  position: absolute;
+  top:20%;
+  height:35%;
+  animation-name: leftclouds;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.big-cloud_2{
+  opacity:0%;
+  position: absolute;
+  top:35%;
+  left: 50%;
+  animation-name: rightclouds;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+
+.cloud-group{
+  z-index:5;
+}
+
+.cloud-group_1{
+  opacity:0%;
+  position: absolute;
+  top:30%;
+  left: 25%;
+  animation-name: leftclouds;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+.cloud-group_2{
+  opacity:0%;
+  position: absolute;
+  height:25%;
+  top:10%;
+  left:60%;
+  animation-name: rightclouds;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+}
+.cloud-group_3{
+  opacity:0%;
+  position: absolute;
+  height:50%;
+  top:30%;
+  left:40%;
+  animation-name: rightclouds;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.middle-cloud{
+  opacity:0%;
+  position: absolute;
+  top:20%;
+  left:40%;
+  height:15%;
+  animation-name: leftclouds;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+.middle-cloud2{
+  opacity:0%;
+  position: absolute;
+  top:60%;
+  left:22%;
+  height:15%;
+  animation-name: leftclouds;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+.middle-cloud3{
+  opacity:0%;
+  position: absolute;
+  top:50%;
+  left:40%;
+  height:15%;
+  animation-name: rightclouds;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+
+
+
+
+
+
+@keyframes titleZoomin {
+  0%{font-size: 0vw;
+    top: 50%;
+    left:50%;
+    color: rgb(250, 225, 0);
+  }
+  100%{font-size:12vw;
+    top: 30%;
+    left:4%;
+    color: rgb(250, 225, 0);
+  }
+}
+
+@keyframes titleInNavbar{
+from{  
+  top: 30%;
+  left:4%;
+  color: rgb(250, 225, 0);
+  font-size: 12vw;
+  }
+to{
+  top: 8px;
+  left:1.5%;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+  font-size: 5vh;
+  }
+}
+
+
+@keyframes endsky{
+  0%{
+    opacity:100%;
+  }
+  75%{
+    opacity:100%;
+  }
+  100%{
+    opacity:0%;
+  }
+
+}
+@keyframes leftclouds{
+  from{
+    transform: translateX(0%);
+    opacity:100%;
+  }
+  to{
+    transform:translateX(-100%);
+    opacity:0%;
+    z-index:0;
+  }
+}
+@keyframes rightclouds{
+  from{
+    transform: translateX(0%);
+    opacity:100%
+  }
+  to{
+    transform:translateX(100%);
+    opacity:0%
+  }
+}
+
+/* -----END INTRO SKY---------- */
+
+
+/*-----NAVBAR--------*/
+
+.navbar{
+  display:none;
+  position: top;
+  width: 100%;
+  background-color: rgba(0, 204, 0, 0.116);
+  animation-name: navbar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.nav-link{
+  color:rgb(255, 255, 255);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+@keyframes navbar{
+  0%{opacity:0%}
+  100%{opacity:100%}
+
+
+}
+
+/*-----------END NAVBAR-------*/
+
+
+
+/*------------SITE BODY-------------*/
+
+#siteBody{
+  display:none;
+  margin: 10% auto 5% auto;
+  animation-name: navbar;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  font-family: LTwave;
+  color:rgb(255, 255, 255);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+/*----BIO-----------*/
+
+
+#myBio{
+  background-color:rgba(0, 204, 0, 0.116); 
+  margin: 20px auto 20px auto;
+  padding:5px;
+}
+
+.photo{
+  float: left;
+  height:130px;
+  border-radius: 50%;
+}
+
+
+.cv-link{
+  margin-right: 50px;
+  padding: 8px;
+  right: -10px;
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.cv-link:hover{
+  color:rgba(0, 204, 0, 0.116);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+  background-color: white;
+}
+
+/*--------END BIO-----------*/
+
+
+
+/*-----------SKILLS--------------*/
+
+#mySkills{
+  background-color:rgba(0, 204, 0, 0.116); 
+  margin: 20px auto 20px auto;
+  padding:5px;
+}
+
+#mySkills h2{
+  margin: 5px 0 0 0;
+}
+
+#mySkills p{
+  margin: 0px auto 20px auto;
+}
+
+.skillsRange{
+  margin: 0px auto 0px auto;
+}
+
+.skillsRange img{
+  height: 90px;
+  padding-bottom: 5px;
+}
+
+/*------------END SKILLS--------------*/
+
+
+/*-----------CV SECTION--------------*/
+#myCV{
+  background-color:rgba(0, 204, 0, 0.116); 
+  margin: 20px auto 20px auto;
+  padding:5px;
+  min-height:1000px;
+  overflow: hidden;
+}
+
+#myCV h2{
+  margin: 5px 0 0 0;
+}
+
+.lego{
+  height: 10%;
+  width: 40%;
+  padding: 1%;
+}
+
+.lego p{
+  margin-top: 3%;
+  font-size: 30px;
+
+}
+
+.lego1{
+  opacity: 0;
+  margin-top: 3%;
+  margin-left: 42%;
+  margin-bottom: -15px;
+  background-image: url(./images/legos/blueLego.png);
+  background-size: contain;
+  position:relative;
+  z-index: 6;
+  animation-name: legoFall;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+
+.lego2{
+  opacity: 0;
+  margin-left: 20%;
+  margin-bottom: -15px;
+  background-image: url(./images/legos/orangeLego.png);
+  background-size: contain;
+  position:relative;
+  z-index: 5;
+  animation-name: legoFall;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.lego3{
+  opacity: 0;
+  margin-left: 49%;
+  background-image: url(./images/legos/greenLego.png);
+  background-size: contain;
+  position:relative;
+  z-index: 4;
+  animation-name: legoFall;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes legoFall{
+  from{
+    transform: translateY(-1000px);
+    opacity:0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity:1;
+  }
+}
+
+/*-----------END CV SECTION--------------*/
+
+
