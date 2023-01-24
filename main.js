@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
 });
 
 
-//--------SKILS--------------
+//--------SKILLS--------------
 
 let skillsInputs = document.querySelectorAll('.skillsInput');
 let sendMail = document.querySelector('#sendMail');
@@ -46,3 +46,15 @@ Souhaitez-vous m'envoyer un mail?
 })
 
 
+//---------------------CV-----------------
+
+let legoDivs = document.querySelectorAll('.lego');
+let legoCont = document.querySelector('.legoCont');
+let cursor = document.querySelector('.cursor');
+
+legoCont.addEventListener('mouseover', function(){
+  legoDivs.forEach(function(legoDiv){
+    legoDiv.classList.add('legoAnim');
+  })
+  cursor.classList.add('deleted-cursor');
+})
